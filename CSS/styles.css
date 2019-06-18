@@ -156,7 +156,26 @@ h4{
 .navegacion a:hover {
     color: #71B100;
 }
-
+/* MOBILE MENU */
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+.navegacion:target {
+    display: block;
+}
 /*ICONOS NOSOTROS*/
 @media (min-width: 768px) {
     .iconos-nosotros {
